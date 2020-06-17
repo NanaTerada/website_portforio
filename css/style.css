@@ -27,7 +27,8 @@ h1,h2,h3,h4 ,p{
 .logo {
     width: 220px;
     height: 40px;
-    background: #808080;
+    /* background: #808080; */
+    background: #fabab4;
     padding: 10px 20px;
     text-align: center;
     font-family: 'MuseoModerno', cursive;
@@ -50,6 +51,7 @@ header nav {
     width: 100%;
     height: 100px;
     background: #f54d6f;
+    //background: #fabab4;
     z-index: 100;
 
     position: fixed;
@@ -111,15 +113,20 @@ header nav ul li{
     margin-left: auto;
     font-family: 'MuseoModerno', cursive;
     margin: 20px 20px 50px auto;
+
+    box-sizing: border-box;
+    border: #fabab4 double 7px;
+    border-radius: 5px;
 }
 
 .linkbtn a {
     display: inline-block;
-    width:180px;
+    width:160px;
 }
 
 .linkbtn:hover {
     opacity: 0.8;
+    background: #ff3a2e;
 }
 
 footer {
@@ -363,6 +370,93 @@ small {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* lower-page-common?? */
+
+.lower-page-top-container {
+    height: 100vh;
+}
+
+.lower-page-top {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    top:0;
+    background-image   : radial-gradient( #fcd53f 30%, transparent 33%),
+                         radial-gradient( #fcd53f 30%, transparent 33%);
+    background-position: 0 0, 50px 30px;
+    background-size    : 5px 5px;
+}
+
+.lower-page-top-img img {
+    width: auto;
+    /* height: auto; */
+    height: 100%;
+}
+
+.lower-page-top-img {
+    /* width: 300px; */
+    height: 60vh;
+    margin: 120px auto 20px;
+}
+
+.lower-page-top-title {
+    font-size: 3rem;
+    /* color: #5d6c74; */
+    color: #f54d6f;
+}
+
+/* lower-page-common?? */
+
+
+/* page-work */
+
+
+.lower-page-work-container {
+    background: #ffffff;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+.lower-page-work-img img{
+    width:100%;
+    height: auto;
+}
+
+.lower-page-work-img {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+/* page-work */
 
 
 
