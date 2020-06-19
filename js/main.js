@@ -167,13 +167,13 @@
                     // 下方向
                     flag = 2;
         
-                    $('html, body').stop(true).animate({ scrollTop: next_offset}, 300,'swing',function(){
+                    $('html, body').stop(true).animate({ scrollTop: next_offset}, 500,'swing',function(){
                         flag = 1;
                 });
                 } else if ( current_pos < prev_pos ) {
                     // 上方向
                     flag = 2;
-                    $('html, body').stop(true).animate({ scrollTop: prev_offset}, 300,'swing',function(){
+                    $('html, body').stop(true).animate({ scrollTop: prev_offset}, 500,'swing',function(){
                         flag = 1;
                 });
                 }

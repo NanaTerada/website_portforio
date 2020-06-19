@@ -501,6 +501,90 @@ small {
 
 /* page blog */
 
+.lower-page-blog-container {
+   
+    height: 50vh;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.lower-page-blog-container-bg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #808080;
+    opacity: 0;
+}
+
+.lower-page-blog-container a:hover .lower-page-blog-container-bg::after{
+    opacity: 0.5;
+}
+
+
+
+.lower-page-blog-container a {
+    display: inline-block;
+    height: 50vh;
+    width: 100%;
+    color: #000000;
+}
+
+
+
+.lower-page-blog-container-bg {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    margin: 10px;
+    vertical-align: center;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.flex-text {
+    flex: 1;
+    padding: 5%;
+    min-width:300px;
+
+}
+
+.lower-page-blog-date {
+    text-align: right;
+}
+
+.lower-page-blog-title {
+    text-align: left;
+}
+
+.lower-page-blog-p {
+    text-align: left;
+    //height: 40vh;
+    overflow: hidden;
+    
+}
+
+.flex-img {
+    padding: 10px;
+}
+
+.lower-page-blog-img img{
+    width: 100%;
+    height: auto;
+}
+
+.lower-page-blog-img {
+    width: 270px;
+    height: 240px;
+    overflow: hidden;
+    background: #fcd53f;
+}
+
 /* page blog */
 
 /* single */
@@ -705,6 +789,7 @@ small {
 }
 
 
+
 /* 【タブレット縦以上】 */
 @media screen and (max-width: 700px) {
 
@@ -718,6 +803,22 @@ small {
     .lower-page-work-img {
         width:100%;
         height: auto;
+    }
+
+
+    .lower-page-blog-container {
+   
+        height: 100vh;
+    }
+
+
+    .lower-page-blog-container a {
+        height: 100vh;
+    }
+
+    .lower-page-blog-container-bg {
+        justify-content: center;
+        
     }
     
     
@@ -761,7 +862,7 @@ small {
     display: block;
      width: 16px; 
      height: 16px; 
-     background: #000; 
+     background: #dddddd; 
      margin-bottom: 10px; 
      border-radius: 50%;
 
