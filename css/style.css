@@ -48,14 +48,16 @@ h1,h2,h3,h4 ,p{
 
 header nav {
     display: flex;
+    /* width: 100%; */
     width: 100%;
     height: 100px;
     background: #f54d6f;
-    //background: #fabab4;
+    /* background: #fabab4; */
     z-index: 100;
 
     position: fixed;
     top:0;
+    
 
     transition: 0.5s ease-in;
 }
@@ -132,20 +134,27 @@ header nav ul li{
 footer {
     background:#b2d2e0;
     text-align: center;
-    //height: 200px;
-    padding-top:20px;
+    height: 100vh;
+    /* padding-top:20px; */
+    position: relative;
 }
 
 small {
-    background:#b2d2e0 ;
+    /* background:#b2d2e0 ; */
+    position: absolute;
+    bottom: 10px;
 }
 
 #topbtn {
     width: 50px;
     height: 50px;
     background: #ffffff;
-    margin-left: auto;
+    //margin-left: auto;
     line-height: 50px;
+
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
 }
 
 #topbtn a {
@@ -164,14 +173,45 @@ small {
     clip-path: circle(50%);
     background: #f54d6f;
     margin: 0 auto;
+    display: none;
 }
 
 .footer-logo {
+    position: absolute;
     background: #fabab4;
 }
 
 
 
+
+.mailbtn img {
+    width: 100%;
+    height: auto;
+}
+
+.mailbtn {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #f54d6f;
+    overflow: hidden;
+    
+}
+
+.mailbtn:hover {
+    opacity: 0.8;
+    background: #ff3a2e;
+
+}
+
+#contact {
+    //background: url(../img/contact-back.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    box-sizing: border-box;
+
+}
 
 
 
@@ -180,7 +220,7 @@ small {
 
 /*top-page section */
 
-#about,#work,#blog,#contact {
+#about,#work,#blog{
     padding: 200px 0;
 }
 
@@ -202,7 +242,10 @@ small {
 
 
 #contact{
-
+    background: #fabab4;
+    /* //height: 100vh;
+    //padding-top: 150px; */
+    padding-bottom:15vh;
 }
 
 
@@ -341,10 +384,7 @@ small {
 /* wordpressの時比率おかしくなるかも？ */
 .blog-container-img img {
     width: 100%;
-    height: auto;
-    
-
-    
+    height: auto;  
 }
 
 
@@ -394,6 +434,7 @@ small {
 
 .lower-page-top-container {
     height: 100vh;
+    position: relative;
 }
 
 .lower-page-top {
@@ -458,6 +499,163 @@ small {
 
 /* page-work */
 
+/* page blog */
+
+/* page blog */
+
+/* single */
+.single-top {
+    position: relative;
+    background: chartreuse;
+    height: 100vh;
+}
+
+.blog-eye img {
+    width: 100%;
+    height: auto;
+}
+.blog-eye {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: coral;
+    width: 35%;
+    height: calc(100vh-120px);
+    overflow: hidden;
+}
+
+
+.blog-eye-back img {
+    width: 100%;
+    height: auto;
+    //object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blog-eye-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: chocolate;
+    width: 100%;
+    overflow: hidden;
+}
+
+.single-top-title {
+    position: fixed;
+    top:120px;
+    left: 20px;
+    width: 200px;
+    height: 50px;
+    background: #000000;
+    font-family: 'MuseoModerno', cursive;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.single-top-title a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    color:#fabab4 ;
+}
+
+.single-top-blog-title{
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+.single-page-blog-container{
+    //width: 100%;
+    padding: 20px 10px 100px;
+    background:#ffffff;
+}
+
+.single-page-content-date {
+    text-align: right;
+}
+
+.single-page-content-title {
+    text-align: left;
+}
+
+.single-page-content-p {
+    text-align: left;
+}
+
+
+.blog--prev-next {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    widows: 100%;
+}
+
+.blog-prev , .blog-next{
+    width: 250px;
+    background: #fabab4;
+    text-align: center;
+    margin: 20px;
+}
+
+.blog-prev-next-img img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-prev-next-img {
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    background: coral;
+    margin: 0 auto;
+}
+
+
+.bloglink {
+    background: #ffffff; 
+    padding:30px 0;
+    margin-bottom: 150px;
+}
+
+.bloglinkbtn {
+    background: #f54d6f;
+    width: 300px;
+    height: 200px;
+    
+    margin: 0px auto 30px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 5px;
+    border:7px double #fabab4;
+    transition: .3s;
+}
+
+.bloglinkbtn:hover {
+    background: #ff3a2e;
+    opacity: 0.8;
+}
+
+.bloglinkbtn a {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    color: #fabab4;
+}
+
+
+/* single */
 
 
 @media screen and (max-width: 999px){
@@ -475,7 +673,7 @@ small {
         background: #fc1aaa;
         opacity: 0.8;
         position: fixed;
-        top: 1000px;
+        top: -1000px;
         left: 50%;
         transform:translate(-50%,-50%);
         width: 95%;
@@ -514,9 +712,71 @@ small {
         margin-right: 0px;
     }
 
+        /* page-work */
+
+
+    .lower-page-work-img {
+        width:100%;
+        height: auto;
+    }
+    
+    
+    
+    
+
 } 
 
 /* 【スマートフォン横】 */
 @media screen and (max-width: 481px) { 
 
 } 
+
+
+
+
+
+ .box { 
+    width: 100%;
+    //height: 100vh;
+    //display: flex;
+       /* justify-content: center;
+        align-items: center; */
+    }
+
+
+.box:nth-child(2n) {
+    /* background: #08ffff;
+    opacity: 0.3; */
+}
+
+#indicator {
+    position: fixed; 
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%);
+
+    z-index: 100;
+}
+#indicator a { 
+    display: block;
+     width: 16px; 
+     height: 16px; 
+     background: #000; 
+     margin-bottom: 10px; 
+     border-radius: 50%;
+
+     transition: 0.3s;
+    }
+
+#indicator a:hover{
+    transform: scale(1.5);
+}
+
+
+#indicator a:last-child { 
+    margin-bottom: 0;
+}
+#indicator a.active { 
+    background: #e5afaf;
+    transform: scale(1.5);
+}
