@@ -143,6 +143,8 @@ small {
     /* background:#b2d2e0 ; */
     position: absolute;
     bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #topbtn {
@@ -221,7 +223,7 @@ small {
 /*top-page section */
 
 #about,#work,#blog{
-    padding: 200px 0;
+    padding: 100px 0;
 }
 
 #top{
@@ -471,6 +473,132 @@ small {
 /* lower-page-common?? */
 
 
+
+/* page-about */
+
+.page-about-section {
+    height: 100vh;
+    background: #fabab4;
+    padding-top:70px;
+    box-sizing: border-box;
+}
+
+.page-about-section:nth-child(2n) {
+    background: #ff3a2e;
+}
+
+.lower-page-about-person-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.lower-page-about-person-text {
+    width: 50%;
+    max-height: 50vh;
+    padding: 20px;
+    text-align: left;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.lower-page-about-person-img-container {
+    width: 50%;
+    padding: 20px;
+    max-height: 50vh;
+
+}
+
+.lower-page-about-person-img img {
+    width: 100%;
+    height: auto;
+}
+
+.lower-page-about-person-img {
+    width: 90%;
+    //height:500px;
+    overflow: hidden;
+}
+
+
+.service-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lower-page-about-service-container {
+    width: 300px;
+    //height: 400px;
+}
+
+.lower-page-about-service-img img {
+    width: 100%;
+    height: auto;
+}
+
+.lower-page-about-service-img {
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    margin: 0 auto;
+    overflow: hidden;
+    clip-path: circle(50%);
+}
+
+
+
+
+.lower-page-about-skill-container {
+    display: flex;
+    //background: #808080;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.lower-page-about-skill-text {
+    padding: 10px;
+}
+
+.lower-page-about-skik-img-container {
+    padding: 10px;
+}
+
+.lower-page-about-skill-img img {
+    width: 100%;
+    height: auto;
+}
+
+.lower-page-about-skill-img {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.lower-page-about-tool-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.lower-page-about-tool-img img {
+    width: 100%;
+    height: auto;
+}
+
+.lower-page-about-tool-img {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+/* page-about */
+
+
 /* page-work */
 
 
@@ -586,6 +714,20 @@ small {
 }
 
 /* page blog */
+
+
+/* page-contact */
+
+.page-form-section {
+    height:100vh;
+}
+
+input,textarea {
+    border: none;
+}
+
+
+/* page-contact */
 
 /* single */
 .single-top {
@@ -820,9 +962,39 @@ small {
         justify-content: center;
         
     }
+
+
+    .service-flex {
+        display: block;
+    }
+
+    .lower-page-about-service-container {
+        width: 100%;
+    }
+
+    .lower-page-about-service-img img {
+        height: 100%;
+        width: auto;
+    }
     
+
+    .lower-page-about-service-img {
+        width: auto;
+        height: 20vh;
+        overflow: hidden;
+    }
+
+    .lower-page-about-person-container {
+        display: block;
+    }
     
+    .lower-page-about-person-text {
+        margin: 0 auto;
+    }
     
+    .lower-page-about-person-img-container {
+        margin: 0 auto;
+    }
     
 
 } 
@@ -830,6 +1002,8 @@ small {
 /* 【スマートフォン横】 */
 @media screen and (max-width: 481px) { 
 
+    
+    
 } 
 
 
@@ -880,4 +1054,21 @@ small {
 #indicator a.active { 
     background: #e5afaf;
     transform: scale(1.5);
+
+    
+
+}
+
+
+/* fadein css */
+
+.fadeins {
+    opacity: 0;
+    transform: translate(0,50px);
+    transition: 1500ms;
+}
+
+.fadeins.scrollin {
+    opacity: 1;
+    transform: translate(0,0);
 }

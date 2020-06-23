@@ -4,10 +4,10 @@
     $(function(){
 
 
-        $(window).resize(function (){
-            let windowWidth = $(window).width();
-            alert(windowWidth);
-        });
+        // $(window).resize(function (){
+        //     let windowWidth = $(window).width();
+        //     alert(windowWidth);
+        // });
 
 
          
@@ -37,6 +37,19 @@
                 }
 
             });
+
+            $(".fadeins").each(function(){
+
+                let elePos = $(this).offset().top;
+
+                if(scroll > elePos - WIN_HEI + 200){
+                    $(this).addClass('scrollin');
+                   
+                }
+
+            });
+
+
 
         });
 
@@ -69,6 +82,10 @@
             return false;
             
         });
+
+
+
+
 
         });
 
